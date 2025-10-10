@@ -1,0 +1,24 @@
+{
+	"servers": {
+		"myfinance": {
+			"type": "stdio",
+			"command": "dotnet",
+			"args": [
+				"run",
+				"--project",
+				"C:\\Users\\Kevin\\Desktop\\Projects\\MyFinanceMCP\\src\\MyFinanceMCP.App\\MyFinanceMCP.App.csproj"
+			]
+		},
+		"awesome-copilot": {
+			"type": "stdio",
+			"command": "docker",
+			"args": [
+				"run",
+				"-i",
+				"--rm",
+				"ghcr.io/microsoft/mcp-dotnet-samples/awesome-copilot:latest"
+			]
+		}
+	},
+	"inputs": []
+}

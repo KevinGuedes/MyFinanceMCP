@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  myfinancemcp:
+    build:
+      context: .
+      dockerfile: MyFinanceMCP.App/Dockerfile
+      target: runtime
+    image: myfinancemcp:latest
+    ports:
+      - "5000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    restart: unless-stopped

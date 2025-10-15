@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+.vs/
+.git/
+*.user
+*.suo
+*.log
+*.mdf
+*.ldf
+**/*.db
+MyFinanceMCP.App/bin/
+MyFinanceMCP.App/obj/

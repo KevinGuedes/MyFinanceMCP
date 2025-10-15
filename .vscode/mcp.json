@@ -6,7 +6,7 @@
 			"args": [
 				"run",
 				"--project",
-				"C:\\Users\\Kevin\\Desktop\\Projects\\MyFinanceMCP\\src\\MyFinanceMCP.App\\MyFinanceMCP.App.csproj"
+				"C:\\Users\\Kevin\\Desktop\\Projects\\MyFinanceMCP\\MyFinanceMCP.App\\MyFinanceMCP.App.csproj"
 			]
 		},
 		"awesome-copilot": {

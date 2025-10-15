@@ -1,12 +1,20 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using MyFinanceMCP.App.Data;
 using MyFinanceMCP.App.Interfaces;
 using MyFinanceMCP.App.MCP.Tools;
 using MyFinanceMCP.App.Services;
 
 var builder = Host.CreateEmptyApplicationBuilder(null);
+
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole(options =>
+{
+    options.LogToStandardErrorThreshold = LogLevel.Debug;
+});
+
 
 var appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
 var myAppFolder = Path.Combine(appData, "MyFinanceMCP");
